@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{URL::asset('css/styles.css');}}">
-
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/32/32406.png">
 
    
 
