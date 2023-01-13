@@ -1,0 +1,46 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+
+    background-color: #e5e5f7;
+    background-image:  radial-gradient(#1D8FE1 1.6px, transparent 1.6px), radial-gradient(#1D8FE1 1.6px, #dfe9f3 1.6px);
+    background-size: 64px 64px;
+    background-position: 0 0,32px 32px;
+    
+}
+section{
+   align-self: center;
+   padding-top: 2rem;
+   padding-bottom: 4rem;
+}
+.QuizStang{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+.QuizStang:hover{
+    transition: 0.5s;
+    -webkit-filter: invert(0%); /* Safari/Chrome */
+    filter: invert(0%);
+}
+a {
+    text-decoration:none; 
+}
+nav {
+
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 12%);
+}
+.btn{
+    color: white;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-brand:hover{
+    color: white;
+}
+.nav-link{
+    color: rgba(255, 255, 255, 0.737);
+}
+.nav-link:hover{
+    color: white;
+}
