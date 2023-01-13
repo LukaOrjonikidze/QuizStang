@@ -38,4 +38,7 @@ Route::middleware("user")->group(function (){
 });
 
 
-Route::middleware("admin")->get("/admin", [MainController::class, "adminPage"])->name("admin");
+Route::middleware("admin")->group(function (){
+    Route::get("/admin", [MainController::class, "adminPage"])->name("admin");
+    Route::get("/publish/quizzes/{quiz}", [MainController::class, "publishQuiz"])->name("publish");
+});

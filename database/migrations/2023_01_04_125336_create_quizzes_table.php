@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string("photo");
             $table->string("description");
             $table->integer("user_id")->unsigned();
+            $table->boolean("main")->default(false);
             $table->timestamps();
         });
     }

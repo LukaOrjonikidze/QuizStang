@@ -18,7 +18,16 @@
                 <li class="list-group-item"><a class="card-link" href="{{route('update_quiz', ["quiz"=>$quiz])}}"><button class="btn btn-info btn-sm">Change</button></a></li>
                 <li class="list-group-item"><a class="card-link" href="{{route('quiz', ["quiz"=>$quiz])}}"><button class="btn btn-primary btn-sm">Try Out</button></a></li>
                 <li class="list-group-item"><a class="card-link" href="{{route('delete_quiz', ["quiz"=>$quiz])}}"><button class="btn btn-danger btn-sm">Delete</button></a></li>
-                </ul>
+                @if (Auth::user()->id == 1)
+                <li class="list-group-item"><a class="card-link" href="{{route('publish', ["quiz"=>$quiz])}}"><button class="btn btn-dark btn-sm">
+                    @if ($quiz->main)
+                        Remove Publish
+                    @else 
+                    Publish
+                    @endif
+                </button></a></li>
+                @endif
+            </ul>
             </div>
         </div>
     @empty
